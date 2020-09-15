@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import jp.syned.workshopmongo.domain.Post;
-import jp.syned.workshopmongo.domain.User;
 import jp.syned.workshopmongo.services.PostService;
 
 @RestController

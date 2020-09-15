@@ -3,6 +3,7 @@ package jp.syned.workshopmongo.domain;
 import java.io.Serializable;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -12,6 +13,7 @@ public class User implements Serializable{
 	@Id
 	private String id;
 	private String name;
+	@Indexed(unique=true)
 	private String email;
 	
 	public User() {
